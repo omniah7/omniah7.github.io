@@ -1,8 +1,6 @@
-# Omniah Arafah - Data Science Portfolio
+# <img src="assets/images/primary-icon.png" alt="Logo" width="35" style="vertical-align: bottom;"> Omniah Arafah - Data Science Portfolio
 
-![Portfolio Screenshot](assets/images/primary-icon.png)
 
-## 🌟 About
 Aspiring Data Scientist | Turning Raw Data into Meaningful, Real-World Impact
 
 ## 🚀 Live Demo
@@ -16,6 +14,7 @@ Visit: [https://omniah7.github.io](https://omniah7.github.io)
 - CSS Custom Properties for easy theming
 
 ## 📂 Project Structure
+```
 omniah-portfolio/
 ├── index.html # Home page with hero & stats
 ├── about.html # Bio, pitch, mission, education
@@ -28,6 +27,7 @@ omniah-portfolio/
 ├── css/base.css # Main stylesheet
 ├── js/ # JavaScript files
 └── images/ # Images and icons
+```
 
 ## 🎨 Color Scheme
 - Background Blue: `#00316b`
