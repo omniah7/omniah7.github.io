@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Omniah Arafah</title>
+    <meta name="description" content="Projects by Omniah Arafah - Machine Learning, Data Visualization, SQL Analytics, and more.">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+
+    <!-- ============================================================
+         THEME FLASH PREVENTION
+         This MUST run BEFORE any CSS loads to prevent FOWT
+         (Flash of Wrong Theme) when navigating between pages.
+         ============================================================ -->
+    <script>
+        (function() {
+            // Immediately check localStorage for saved theme preference
+            // This runs synchronously before the page renders,
+            // preventing the "flash" of dark mode on light mode users
+            const savedMode = localStorage.getItem('omniah_portfolio_mode');
+            if (savedMode === 'light') {
+                document.documentElement.classList.add('light-mode');
+            }
+            // Also set language direction immediately to prevent layout shift
+            const savedLang = localStorage.getItem('omniah_portfolio_lang');
+            if (savedLang === 'ar') {
+                document.documentElement.dir = 'rtl';
+                document.documentElement.lang = 'ar';
+            }
+        })();
+    </script>
+
+</head>
+<body>
+    <div id="shared-container"></div>
+
+    <main class="main-content" id="mainContent">
+        <section class="projects-page">
+            <h1 class="projects-page__title" id="projectsHeading">...</h1>
+            <p class="projects-page__subtitle" id="projectsSubtitle">...</p>
+
+            <!-- FILTER BAR -->
+            <div class="filter-bar" id="filterBar">
+                <button class="filter-tag filter-tag--active" data-filter="all" id="filterAllBtn">...</button>
+            </div>
+
+            <!-- PROJECTS GRID -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Populated by JS -->
+            </div>
+
+            <!-- EMPTY STATE -->
+            <div class="projects-empty" id="projectsEmpty" style="display:none;">
+                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" width="64" height="64">
+                    <rect x="8" y="8" width="48" height="48" rx="8" fill="none"/>
+                    <line x1="20" y1="28" x2="44" y2="28"/>
+                    <line x1="20" y1="36" x2="36" y2="36"/>
+                </svg>
+                <p id="emptyMessage">...</p>
+            </div>
+        </section>
+            
+        <!-- Bottom Bar Footer -->
+        <footer class="footer-bar">
+            <div class="footer-bar__content">
+                <p class="footer-bar__phrase" id="footerPhrase">.</p>
+                <p class="footer-bar__location" id="footerLocation">.</p>
+                <p class="footer-bar__copyright" id="footerCopyright">.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+</html>

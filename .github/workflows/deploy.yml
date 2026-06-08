@@ -1,0 +1,25 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main # Or whichever branch you push to
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Inject EmailJS Keys
+        run: |
+          sed -i "s/TEMPORARY_PUBLIC_KEY/${{ secrets.EMAILJS_PUBLIC_KEY }}/g" assets/js/contact.js
+          sed -i "s/TEMPORARY_SERVICE_ID/${{ secrets.EMAILJS_SERVICE_ID }}/g" assets/js/contact.js
+          sed -i "s/TEMPORARY_TEMPLATE_ID/${{ secrets.EMAILJS_TEMPLATE_ID }}/g" assets/js/contact.js
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: . # Deploys your root folder files
+          branch: gh-pages # Deploys to a clean, production-only branch

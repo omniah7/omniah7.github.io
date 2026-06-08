@@ -1,0 +1,226 @@
+{
+  "home": {
+    "badge": "Aspiring Data Scientist",
+    "titleLine1": "Turning Data Into",
+    "titleLine2": "Ethical, Impact-Driven Solutions",
+    "subtitle": "Data with a soul. Guided by faith, powered by precision — building platforms that elevate human lives through ethical AI and statistical rigor.",
+    "ctaWork": "Explore My Work",
+    "ctaAbout": "Learn More About Me",
+    "missionTitle": "My Mission"
+  },
+
+  "about": {
+    "myStory": "My Story",
+    "elevatorPitchTitle": "Elevator Pitch",
+    "readMore": "Read Full Pitch",
+    "showLess": "Show Less",
+    "educationTitle":"Education & Certifications",
+    "languagesTitle": "Languages",
+    "focusTitle": "Current Focus",
+    "focuses": [
+      "Deepening expertise in machine learning & AI",
+      "Contributing to open-source data science projects",
+      "Building projects with measurable real-world impact"
+    ]
+  },
+  "projectsPage": {
+    "heading": "My Projects",
+    "subtitle": "Filter by skill or technology to explore my work across machine learning, data visualization, SQL analytics, and more.",
+    "filterAll": "All",
+    "emptyMessage": "No projects match this filter. Try another skill.",
+    "featuredBadge": "Featured",
+    "viewOnGithub": "View on GitHub →",
+    "noPreview": "📊 No Preview Available"
+  },
+  "contactPage": {
+    "heading": "Let's Connect",
+    "subtitle": "I'm currently looking for internship and junior analyst opportunities. Whether you have a project in mind, a collaboration idea, a review or just want to say hello — I'd love to hear from you.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me about what you're thinking...",
+      "submitBtn": "Send Message",
+      "feedbackSent": "Message sent!"
+    },
+    "links": {
+      "email": "omniaharafah@gmail.com",
+      "emailBtn": "Email Me",
+      "github": "GitHub | omniah7",
+      "githubBtn": "View Profile",
+      "linkedin": "LinkedIn | omniah-arafah",
+      "linkedinBtn": "Connect",
+      "location": "Alexandria, Egypt"
+    }
+  },
+
+  "footer": {
+    "copyright": "© {year} {name}. All rights reserved.",
+    "phrase": "Built with AI and the fundamental web design skills I mastered during the early days of my coding journey 💙"
+  },
+
+
+  "basics": {
+    "name": "Omniah Arafah",
+    "fullName": "Omniah Arafah Mostafa Hasan",
+    "label": "Aspiring Data Scientist | Turning Raw Data into Meaningful, Real-World Impact",
+    "tagline": "Turning data into ethical, impact-driven solutions that honor faith and improve lives.",
+    "image": "assets/images/avatar.png",
+    "email": "omniaharafah@gmail.com",
+    "location": { "city": "Alexandria", "country": "Egypt" },
+    "url": "https://omniah7.github.io",
+    "cvUrl": "https://drive.google.com/uc?export=download&id=1yJspW18F2FY2s9n-h1aNf86CQIclBD_x",
+    "summary": "I am a final-year Statistics student at Alexandria University with a minor in Computer Science, and I am on my way to becoming a data scientist. I chose this path for three honest reasons. First, data science gives me the tools to solve real-world problems that align with my personal mission — to use technology in ways that are ethical, community-driven, and rooted in my Islamic values. Second, it is a field that rewards both analytical depth and creativity, and it offers a genuinely rewarding career. Third, my natural curiosity for data, combined with a strong academic foundation in statistics, makes this the field where I feel most at home. I build predictive models, design interactive dashboards, and engineer data pipelines — always with the aim of making something that actually matters. I am currently looking for internship or junior analyst opportunities where I can grow, contribute, and do work I am proud of.",
+    "mission": "To live life intentionally as a devoted believer, utilizing my advanced data science and technical skills to empower communities, support ethical AI development, and create meaningful, faith-driven impact within the Islamic community and beyond.",
+    "passions": [
+      "Volunteering time and technical strategy with charity associations.",
+      "Exploring how AI can be developed ethically to improve people's daily lives."
+    ],
+    "interests": [
+      "The science of healthy living and its effects on human performance.",
+      "Predictive analytics and exploring how deeply AI technologies will continue to impact human daily life."
+    ],
+    "stats": [
+      { "value": "7", "label": "Projects" },
+      { "value": "4", "label": "Domains" },
+      { "value": "15", "label": "Technologies" }
+    ]
+  },
+  "elevatorPitch": "Hi, I’m Omniah Arafah.\n\nI am a final-year Statistics student at Alexandria University with a minor in Computer Science. My academic work is deeply rooted in high-stakes data projects, including developing a heart disease prediction model that achieved a 92.9% recall rate and building automated pipelines to process hundreds of thousands of IoT data points for environmental analysis.\n\nI specialize in transforming raw data into insights using Python, SQL, and Power BI.\n\nWhat makes me stand out is my dual focus: I have the technical rigor of a statistician and the practical mindset of a business analyst. I don’t just deliver numbers; I deliver the story behind them.\n\nI help organizations eliminate guesswork by creating clear, interactive dashboards and predictive models. My goal is to make your day-to-day operations easier by identifying client retention patterns and automating the reporting processes that usually take your team hours to complete.\n\nI am currently looking for opportunities to join a forward-thinking team as a Junior Data Analyst. If you are looking for someone who can hit the ground running with data modeling and visualization, I would love to connect and show you my portfolio.\n\nI’m ready to help you turn your data into a competitive advantage, and I’d be delighted to discuss how my skills can support your upcoming projects.",
+  "education": [
+    {
+      "institution": "Alexandria University",
+      "area": "Statistics, Minor in Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2022",
+      "endDate": "2026",
+      "status": "Expected 2026",
+      "courses": ["Statistical Inference","Machine Learning","Database Systems","Data Mining","Time Series Analysis","Data Visualization"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Resala Training Center",
+      "position": "Human Development Committee Organizer",
+      "startDate": "2022",
+      "highlights": ["Coordinated speaker sessions and participant registration","Managed event logistics and communication flow"]
+    },
+    {
+      "organization": "HackerRank Event",
+      "position": "Organization & Logistics Committee Member",
+      "startDate": "2023",
+      "highlights": ["Assisted in organizing a technical event with 100+ attendees","Supported scheduling and attendee coordination"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Heart Disease Prediction Model","category": "Machine Learning","featured": true,
+      "achievement": "High-risk patients detected with 92.9% recall",
+      "description": "Built a machine learning model to help identify patients at risk of heart disease. The project focused on reducing missed diagnoses by prioritizing recall, which is critical in healthcare settings. I handled data cleaning, feature selection, model training, and evaluation using Python.",
+      "keywords": ["Python","Scikit-learn","Pandas","PCA","GridSearchCV","Feature Selection"],
+      "image": [
+        "assets/images/projects/heart_disease/heart_disease_proj1.png"
+    ],
+      "url": "https://github.com/omniah7/Heart_Disease_Project"
+    },
+    {
+      "name": "Air Quality Forecasting & Analysis in Dar es Salaam","category": "Time Series","featured": false,
+      "achievement": "MAE: 3.15 µg/m³ | Processed 346k+ IoT data points",
+      "description": "Engineered a data pipeline to clean and prepare 3 months of IoT sensor data (346k+ entries) for time series analysis. Developed and tuned an ARIMA model to forecast PM2.5 levels, implementing walk-forward validation.",
+      "keywords": ["Python","Pandas","Statsmodels","Scikit-learn","Time Series","ARIMA"],
+      "image": [
+          "assets/images/projects/air_quality/air_quality_proj1.png",
+          "assets/images/projects/air_quality/air_quality_proj2.png"
+      ],
+      "url": "https://github.com/omniah7/Air-Quality-Forecasting-and-Analysis-in-Dar-es-Salaam"
+    },
+    {
+      "name": "Global Chocolate Sales Analysis & Predictive Modeling","category": "Business Analytics","featured": false,
+      "achievement": "R-squared: 1.00 | Identified Gender-Time Matrix for expansion",
+      "description": "Conducted comprehensive data analysis for a global chocolate retailer to identify key drivers of regional sales. Performed data cleaning on a messy dataset and developed a Linear Regression model achieving R-squared of 1.00.",
+      "keywords": ["Python","Pandas","Matplotlib","Seaborn","Scikit-learn","Linear Regression"],
+      "image": ""
+    },
+    {
+      "name": "Chinook Music Store: SQL-Driven Business Intelligence","category": "SQL Analytics","featured": false,
+      "achievement": "Identified Top 3 Revenue-Generating Genres | Optimized Inventory Strategy",
+      "description": "Leveraged SQL Server and Python to perform deep-dive analysis of a digital music store's relational database. Developed complex SQL queries to extract insights across sales performance, customer demographics, and inventory.",
+      "keywords": ["SQL Server","Python","Pandas","Matplotlib","Seaborn","RDBMS"],
+      "image": [
+        "assets/images/projects/chinook_music/chinook_music_proj1.png",
+        "assets/images/projects/chinook_music/chinook_music_proj2.png"
+        ]
+    },
+    {
+      "name": "Egyptian Logistics & Weather Impact Dashboard","category": "Data Visualization","featured": true,
+      "achievement": "Identified main delay causes | Visualized performance across 6+ regions",
+      "description": "Designed an interactive Power BI dashboard to help logistics teams track delivery delays and performance across Egyptian cities. The dashboard highlights late shipments, delay reasons, and weather impact to support faster decision-making.",
+      "keywords": ["Power BI","DAX","Power Query","Logistics Analytics","Data Visualization"],
+      "image": [
+        "assets/images/projects/weather_logistic/weather_proj_1.png",
+        "assets/images/projects/weather_logistic/weather_proj_2.png",
+        "assets/images/projects/weather_logistic/weather_proj_3.png",
+        "assets/images/projects/weather_logistic/weather_proj_4.png"
+      ]
+    },
+    {
+      "name": "COVID-19 Global Healthcare Insights Dashboard","category": "Data Visualization","featured": false,
+      "achievement": "Visualized 200+ countries | Automated trend reporting",
+      "description": "Developed an interactive Power BI dashboard to visualize COVID-19 progression globally. Integrated multi-source data to track cases, mortality rates, and recovery trends with geographical mapping.",
+      "keywords": ["Power BI","DAX","Data Modeling","Public Health Analytics","Time-Series"],
+      "image": [
+        "assets/images/projects/covid19/covid19_proj_1.png"
+      ]
+    },
+    {
+      "name": "Employee Wellbeing & Lifestyle Performance Analysis","category": "Excel Analytics","featured": false,
+      "achievement": "Identified 66.7 Avg WLB Score | Segmented 15k+ records",
+      "description": "Conducted statistical analysis on 15,000+ responses to study personal wellbeing and lifestyle factors. Engineered a custom 'Work-Life Balance' score and used Excel for correlation analysis.",
+      "keywords": ["Excel","Pivot Tables","Advanced Formulas","Data Cleaning","Statistics"],
+      "image": [
+        "assets/images/projects/wellbeing/wellbeing_proj_1.png"
+      ]
+    }
+  ],
+  "seeking": [
+    { "title": "Data Science Internships", "detail": "Seeking hands-on experience in applied machine learning" },
+    { "title": "ML Project Work", "detail": "Working on real-world predictive modeling challenges" },
+    { "title": "Data Analysis Projects", "detail": "Providing insights through statistical analysis" }
+  ],
+  "languages": [
+    { "language": "Arabic", "fluency": "Native proficiency" },
+    { "language": "English", "fluency": "B2 - Upper-Intermediate (Professional & Technical Communication)" }
+  ],
+  "currentFocus": [
+    { "title": "Skill Development", "detail": "Deepening expertise in time series forecasting and deep learning" },
+    { "title": "Open Source", "detail": "Contributing to open-source data science projects" },
+    { "title": "Portfolio Growth", "detail": "Building projects with measurable real-world impact" }
+  ],
+  "certifications": [
+    {
+      "name": "Data Analysis: Skills for the Freelance Professional",
+      "issuer": "National Telecommunication Institute (NTI)",
+      "summary": "An intensive bootcamp mastering advanced workflows in Python, Excel, and Power BI to build client-ready analytical applications."
+    },
+    {
+      "name": "GTC - Machine Learning Internship",
+      "issuer": "Generative Technology Center (GTC)",
+      "summary": "A hands-on training experience utilizing NVIDIA’s virtual labs and expert-led sessions to develop practical expertise in deep learning, accelerated computing, and the deployment of production-ready AI models."
+    },
+    {
+      "name": "Sprints x Microsoft Summer Camp - AI & Machine Learning",
+      "issuer": "Sprints",
+      "summary": "An intensive, project-based program covering the foundations of Python programming, machine learning workflows, and AI integration using Microsoft’s learning resources."
+    },
+    {
+      "name": "Professional Foundations skills",
+      "issuer": "ALX",
+      "summary": "An intensive career-readiness program that develops 21st-century 'meta-skills' including critical thinking, leadership, quantitative reasoning, and collaborative task management to ensure success in the modern tech workplace."
+    }
+
+  ]
+}

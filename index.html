@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omniah Arafah | Data Scientist</title>
+    <meta name="description" content="Omniah Arafah - Aspiring Data Scientist">
+    <link rel="icon" type="image/svg+xml" href="assets/images/primary-icon.svg">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+
+     <!-- ============================================================
+         THEME FLASH PREVENTION
+         This MUST run BEFORE any CSS loads to prevent FOWT
+         (Flash of Wrong Theme) when navigating between pages.
+         ============================================================ -->
+    <script>
+        (function() {
+            // Immediately check localStorage for saved theme preference
+            // This runs synchronously before the page renders,
+            // preventing the "flash" of dark mode on light mode users
+            const savedMode = localStorage.getItem('omniah_portfolio_mode');
+            if (savedMode === 'light') {
+                document.documentElement.classList.add('light-mode');
+            }
+            // Also set language direction immediately to prevent layout shift
+            const savedLang = localStorage.getItem('omniah_portfolio_lang');
+            if (savedLang === 'ar') {
+                document.documentElement.dir = 'rtl';
+                document.documentElement.lang = 'ar';
+            }
+        })();
+    </script>
+    
+</head>
+<body>
+    <div id="shared-container"><!-- Sidebar, Topbar, and Footer are loaded here --></div>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero__badge">
+                <span class="hero__badge-dot"></span>
+                <span>...</span>
+            </div>
+            <h1 class="hero__title">
+                <span class="hero__title-line">...</span>
+                <span class="hero__title-line hero__title-line--accent">...</span>
+            </h1>
+            <p class="hero__subtitle">...</p>
+            <div class="hero__actions">
+                <a href="projects.html" class="btn btn--primary">...</a>
+                <a href="about.html" class="btn btn--outline">...</a>
+            </div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section class="stats-section" id="statsSection">
+            <div class="stats-grid" id="statsGrid">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
+        <!-- MISSION SNAPSHOT -->
+        <section class="mission-snapshot">
+            <div class="mission-card">
+                <div class="mission-card__header">
+                    <div class="mission-card__icon">
+                        <svg viewBox="0 0 40 40" fill="none">
+                            <path d="M20 4C20 4 8 14 8 22a12 12 0 0024 0C32 14 20 4 20 4z" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                            <circle cx="20" cy="20" r="4" fill="currentColor" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <h2 class="mission-card__title">...</h2>
+                </div>
+                <p class="mission-card__text">...</p>
+            </div>
+        </section>
+    
+        <!-- Bottom Bar Footer -->
+        <footer class="footer-bar">
+            <div class="footer-bar__content">
+                <p class="footer-bar__phrase" id="footerPhrase">.</p>
+                <p class="footer-bar__location" id="footerLocation">.</p>
+                <p class="footer-bar__copyright" id="footerCopyright">.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

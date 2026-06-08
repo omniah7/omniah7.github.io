@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Omniah Arafah</title>
+    <meta name="description" content="About Omniah Arafah">
+    <link rel="icon" type="image/svg+xml" href="assets/images/primary-icon.svg">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+
+    <!-- ============================================================
+         THEME FLASH PREVENTION
+         This MUST run BEFORE any CSS loads to prevent FOWT
+         (Flash of Wrong Theme) when navigating between pages.
+         ============================================================ -->
+    <script>
+        (function() {
+            // Immediately check localStorage for saved theme preference
+            // This runs synchronously before the page renders,
+            // preventing the "flash" of dark mode on light mode users
+            const savedMode = localStorage.getItem('omniah_portfolio_mode');
+            if (savedMode === 'light') {
+                document.documentElement.classList.add('light-mode');
+            }
+            // Also set language direction immediately to prevent layout shift
+            const savedLang = localStorage.getItem('omniah_portfolio_lang');
+            if (savedLang === 'ar') {
+                document.documentElement.dir = 'rtl';
+                document.documentElement.lang = 'ar';
+            }
+        })();
+    </script>
+    
+</head>
+<body>
+    <div id="shared-container"></div>
+
+    <main class="main-content" id="mainContent">
+        <!-- ABOUT HEADER -->
+        <section class="about-header">
+            <div class="about-header__avatar-large">
+                <img src="#" alt="Omniah Arafah" class="about-header__img">
+            </div>
+            <h1 class="about-header__name" id="aboutName">...</h1>
+            <p class="about-header__label" id="aboutLabel">...</p>
+        </section>
+
+        <!-- BIO SECTION -->
+        <section class="bio-section">
+            <h2 class="section-title" id="myStoryHeading">...</h2>
+            <div class="bio-card">
+                <p class="bio-card__text" id="bioText">...</p>
+            </div>
+        </section>
+
+        <!-- ELEVATOR PITCH -->
+        <!-- <section class="pitch-section" id="pitchSection">
+            <h2 class="section-title" id="pitchHeading">...</h2>
+            <div class="pitch-card">
+                <div class="pitch-card__play-btn" id="playPitchBtn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                </div>
+                <p class="pitch-card__text" id="pitchText"></p>
+                <button class="btn btn--small btn--outline" id="readMorePitch">...</button>
+            </div>
+        </section> -->
+
+        <!-- EDUCATION & CERTIFICATIONS -->
+        <section class="edu-section">
+            <h2 class="section-title" id="educationHeading">...</h2>
+            <div class="edu-card" id="eduCard">
+                <div class="edu-card__header">
+                    <span class="edu-card__degree" id="eduDegree">...</span>
+                    <span class="edu-card__date" id="eduDates">...</span>
+                </div>
+                <p class="edu-card__detail" id="eduDetail">...</p>
+                <div class="edu-card__courses" id="eduCourses">
+                    <!-- Courses will be inserted by JS -->
+                </div>
+            </div>
+            <!-- Certifications container updated to be dynamic -->
+            <div id="certContainer">
+                <!-- All certifications will be injected here by about.js -->
+            </div>
+        </section>
+
+        <!-- LANGUAGES & FOCUS -->
+        <section class="extra-section">
+            <div class="extra-grid" id="extraGrid">
+                <!-- Will be populated by JS for consistency -->
+            </div>
+        </section>
+
+            
+        <!-- Bottom Bar Footer -->
+        <footer class="footer-bar">
+            <div class="footer-bar__content">
+                <p class="footer-bar__phrase" id="footerPhrase">.</p>
+                <p class="footer-bar__location" id="footerLocation">.</p>
+                <p class="footer-bar__copyright" id="footerCopyright">.</p>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/about.js"></script>
+</body>
+</html>
