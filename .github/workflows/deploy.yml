@@ -3,14 +3,11 @@ name: Deploy Portfolio
 on:
   push:
     branches:
-      - main  # Deploy when pushing to main branch
-  workflow_dispatch:  # Allow manual triggering
+      - main
+  workflow_dispatch:
 
-# ============================================================
-# PERMISSIONS — Required for pushing to gh-pages branch
-# ============================================================
 permissions:
-  contents: write  # Allows pushing to gh-pages branch
+  contents: write
 
 jobs:
   deploy:
@@ -21,22 +18,50 @@ jobs:
 
       # ============================================================
       # SECURITY: Inject real EmailJS keys from GitHub Secrets
-      # These replace the placeholder values in contact.js
+      # Using a Node.js script for reliable string replacement
       # ============================================================
       - name: Inject EmailJS Keys
         run: |
-          sed -i "s/TEMPORARY_PUBLIC_KEY/${{ secrets.EMAILJS_PUBLIC_KEY }}/g" assets/js/contact.js
-          sed -i "s/TEMPORARY_SERVICE_ID/${{ secrets.EMAILJS_SERVICE_ID }}/g" assets/js/contact.js
-          sed -i "s/TEMPORARY_TEMPLATE_ID/${{ secrets.EMAILJS_TEMPLATE_ID }}/g" assets/js/contact.js
-          echo "✅ EmailJS keys injected successfully"
+          node -e "
+            const fs = require('fs');
+            let content = fs.readFileSync('assets/js/contact.js', 'utf8');
+            
+            // Replace placeholders with actual secrets
+            content = content.replace('TEMPORARY_PUBLIC_KEY', process.env.EMAILJS_PUBLIC_KEY);
+            content = content.replace('TEMPORARY_SERVICE_ID', process.env.EMAILJS_SERVICE_ID);
+            content = content.replace('TEMPORARY_TEMPLATE_ID', process.env.EMAILJS_TEMPLATE_ID);
+            
+            fs.writeFileSync('assets/js/contact.js', content);
+            console.log('✅ Keys injected successfully');
+            
+            // Verify no placeholders remain
+            if (content.includes('TEMPORARY')) {
+              console.error('❌ ERROR: Some placeholders still exist!');
+              process.exit(1);
+            }
+          "
+        env:
+          EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
+          EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
+          EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
 
-      # ============================================================
-      # Deploy to gh-pages branch (production)
-      # ============================================================
+      - name: Verify Injected Keys
+        run: |
+          echo "=== Checking contact.js for TEMPORARY strings ==="
+          if grep -q "TEMPORARY" assets/js/contact.js; then
+            echo "❌ FAILED: Placeholder keys still present!"
+            grep -n "TEMPORARY" assets/js/contact.js
+            exit 1
+          else
+            echo "✅ All placeholders replaced successfully"
+            echo "--- First 3 lines after emailjs.init ---"
+            grep -A2 "emailjs.init" assets/js/contact.js || echo "(checking...)"
+          fi
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: .           # Deploy root folder
-          branch: gh-pages    # Production branch
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use built-in token
-          clean: true         # Remove old files before deploying
+          folder: .
+          branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+          clean: true
