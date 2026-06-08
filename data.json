@@ -1,0 +1,140 @@
+{
+  "basics": {
+    "name": "Omniah Arafah",
+    "fullName": "Omniah Arafah Mostafa Hasan",
+    "label": "Aspiring Data Scientist | Turning Raw Data into Meaningful, Real-World Impact",
+    "tagline": "Turning data into ethical, impact-driven solutions that honor faith and improve lives.",
+    "image": "https://omniah7.github.io/assets/images/avatar.jpg",
+    "email": "omniaharafah@gmail.com",
+    "location": { "city": "Alexandria", "country": "Egypt" },
+    "url": "https://omniah7.github.io",
+    "cvUrl": "https://drive.google.com/uc?export=download&id=1yJspW18F2FY2s9n-h1aNf86CQIclBD_x",
+    "summary": "I am a final-year Statistics student at Alexandria University with a minor in Computer Science, and I am on my way to becoming a data scientist. I chose this path for three honest reasons. First, data science gives me the tools to solve real-world problems that align with my personal mission — to use technology in ways that are ethical, community-driven, and rooted in my Islamic values. Second, it is a field that rewards both analytical depth and creativity, and it offers a genuinely rewarding career. Third, my natural curiosity for data, combined with a strong academic foundation in statistics, makes this the field where I feel most at home. I build predictive models, design interactive dashboards, and engineer data pipelines — always with the aim of making something that actually matters. I am currently looking for internship or junior analyst opportunities where I can grow, contribute, and do work I am proud of.",
+    "mission": "To live life intentionally as a devoted believer, utilizing my advanced data science and technical skills to empower communities, support ethical AI development, and create meaningful, faith-driven impact within the Islamic community and beyond.",
+    "missionAr": "أن أحيا حياتي مؤمنةً صالحة، مسخرةً مهاراتي التقنية في تمكين المسلمين وإعلاء شأن دينهم ودنياهم",
+    "passions": [
+      "Volunteering time and technical strategy with charity associations.",
+      "Exploring how AI can be developed ethically to improve people's daily lives."
+    ],
+    "interests": [
+      "The science of healthy living and its effects on human performance.",
+      "Predictive analytics and exploring how deeply AI technologies will continue to impact human daily life."
+    ],
+    "profiles": [
+      { "network": "GitHub", "username": "omniah7", "url": "https://github.com/omniah7" },
+      { "network": "LinkedIn", "username": "omniah-arafah", "url": "https://linkedin.com/in/omniah-arafah" },
+      { "network": "Email", "username": "omniaharafah@gmail.com", "url": "mailto:omniaharafah@gmail.com" }
+    ],
+    "stats": [
+      { "value": "7+", "label": "Projects" },
+      { "value": "4+", "label": "Industry Domains" },
+      { "value": "15+", "label": "Technologies" }
+    ]
+  },
+  "elevatorPitch": "Hi, I’m Omniah Arafah.\n\nI am a final-year Statistics student at Alexandria University with a minor in Computer Science. My academic work is deeply rooted in high-stakes data projects, including developing a heart disease prediction model that achieved a 92.9% recall rate and building automated pipelines to process hundreds of thousands of IoT data points for environmental analysis.\n\nI specialize in transforming raw data into insights using Python, SQL, and Power BI.\n\nWhat makes me stand out is my dual focus: I have the technical rigor of a statistician and the practical mindset of a business analyst. I don’t just deliver numbers; I deliver the story behind them.\n\nI help organizations eliminate guesswork by creating clear, interactive dashboards and predictive models. My goal is to make your day-to-day operations easier by identifying client retention patterns and automating the reporting processes that usually take your team hours to complete.\n\nI am currently looking for opportunities to join a forward-thinking team as a Junior Data Analyst. If you are looking for someone who can hit the ground running with data modeling and visualization, I would love to connect and show you my portfolio.\n\nI’m ready to help you turn your data into a competitive advantage, and I’d be delighted to discuss how my skills can support your upcoming projects.",
+  "education": [
+    {
+      "institution": "Alexandria University",
+      "area": "Statistics, Minor in Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2022",
+      "endDate": "2026",
+      "status": "Expected 2026",
+      "courses": ["Statistical Inference","Machine Learning","Database Systems","Data Mining","Time Series Analysis","Data Visualization"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Resala Training Center",
+      "position": "Human Development Committee Organizer",
+      "startDate": "2022",
+      "highlights": ["Coordinated speaker sessions and participant registration","Managed event logistics and communication flow"]
+    },
+    {
+      "organization": "HackerRank Event",
+      "position": "Organization & Logistics Committee Member",
+      "startDate": "2023",
+      "highlights": ["Assisted in organizing a technical event with 100+ attendees","Supported scheduling and attendee coordination"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Heart Disease Prediction Model","category": "Machine Learning","featured": true,
+      "achievement": "High-risk patients detected with 92.9% recall",
+      "description": "Built a machine learning model to help identify patients at risk of heart disease. The project focused on reducing missed diagnoses by prioritizing recall, which is critical in healthcare settings. I handled data cleaning, feature selection, model training, and evaluation using Python.",
+      "keywords": ["Python","Scikit-learn","Pandas","PCA","GridSearchCV","Feature Selection"],
+      "image": "https://lh3.googleusercontent.com/u/0/d/1qqm7qklgQ8glbGsdGGY1igosJUaVqHC4",
+      "url": "https://github.com/omniah7/Heart_Disease_Project"
+    },
+    {
+      "name": "Air Quality Forecasting & Analysis in Dar es Salaam","category": "Time Series","featured": false,
+      "achievement": "MAE: 3.15 µg/m³ | Processed 346k+ IoT data points",
+      "description": "Engineered a data pipeline to clean and prepare 3 months of IoT sensor data (346k+ entries) for time series analysis. Developed and tuned an ARIMA model to forecast PM2.5 levels, implementing walk-forward validation.",
+      "keywords": ["Python","Pandas","Statsmodels","Scikit-learn","Time Series","ARIMA"],
+      "image": "https://lh3.googleusercontent.com/u/0/d/1GoizKxCYOvl7Io7Cax_WY63vlu98_oEb",
+      "url": "https://github.com/omniah7/Air-Quality-Forecasting-and-Analysis-in-Dar-es-Salaam"
+    },
+    {
+      "name": "Global Chocolate Sales Analysis & Predictive Modeling","category": "Business Analytics","featured": false,
+      "achievement": "R-squared: 1.00 | Identified Gender-Time Matrix for expansion",
+      "description": "Conducted comprehensive data analysis for a global chocolate retailer to identify key drivers of regional sales. Performed data cleaning on a messy dataset and developed a Linear Regression model achieving R-squared of 1.00.",
+      "keywords": ["Python","Pandas","Matplotlib","Seaborn","Scikit-learn","Linear Regression"],
+      "image": "",
+      "url": "https://github.com/omniah7/Chocolate-Sales-Analysis"
+    },
+    {
+      "name": "Chinook Music Store: SQL-Driven Business Intelligence","category": "SQL Analytics","featured": false,
+      "achievement": "Identified Top 3 Revenue-Generating Genres | Optimized Inventory Strategy",
+      "description": "Leveraged SQL Server and Python to perform deep-dive analysis of a digital music store's relational database. Developed complex SQL queries to extract insights across sales performance, customer demographics, and inventory.",
+      "keywords": ["SQL Server","Python","Pandas","Matplotlib","Seaborn","RDBMS"],
+      "image": "https://lh3.googleusercontent.com/u/0/d/1bYsVtXh_4mfBhBdAbs1IPwoLfVqD_sQQ",
+      "url": "https://github.com/omniah7/Chinook-Music-Store-Analytics"
+    },
+    {
+      "name": "Egyptian Logistics & Weather Impact Dashboard","category": "Data Visualization","featured": true,
+      "achievement": "Identified main delay causes | Visualized performance across 6+ regions",
+      "description": "Designed an interactive Power BI dashboard to help logistics teams track delivery delays and performance across Egyptian cities. The dashboard highlights late shipments, delay reasons, and weather impact to support faster decision-making.",
+      "keywords": ["Power BI","DAX","Power Query","Logistics Analytics","Data Visualization"],
+      "image": "https://lh3.googleusercontent.com/u/0/d/1mK47zzW5sUpBhCHwKLph_IoQClHMxsPY",
+      "url": "https://github.com/omniah7/Shipping-Weather-Logistics-Dashboard"
+    },
+    {
+      "name": "COVID-19 Global Healthcare Insights Dashboard","category": "Data Visualization","featured": false,
+      "achievement": "Visualized 200+ countries | Automated trend reporting",
+      "description": "Developed an interactive Power BI dashboard to visualize COVID-19 progression globally. Integrated multi-source data to track cases, mortality rates, and recovery trends with geographical mapping.",
+      "keywords": ["Power BI","DAX","Data Modeling","Public Health Analytics","Time-Series"],
+      "image": "https://lh3.googleusercontent.com/u/0/d/1BoRC3RiOKxqce2yF_5333j108tE-2jSV",
+      "url": "https://github.com/omniah7/COVID-19-PowerBI-Dashboard"
+    },
+    {
+      "name": "Employee Wellbeing & Lifestyle Performance Analysis","category": "Excel Analytics","featured": false,
+      "achievement": "Identified 66.7 Avg WLB Score | Segmented 15k+ records",
+      "description": "Conducted statistical analysis on 15,000+ responses to study personal wellbeing and lifestyle factors. Engineered a custom 'Work-Life Balance' score and used Excel for correlation analysis.",
+      "keywords": ["Excel","Pivot Tables","Advanced Formulas","Data Cleaning","Statistics"],
+      "image": "https://lh3.googleusercontent.com/u/0/d/10_jS7_UG4hQnr7bpuPrQVtof1kLfUXYY",
+      "url": "https://github.com/omniah7/Wellbeing-Lifestyle-Analysis"
+    }
+  ],
+  "seeking": [
+    { "title": "Data Science Internships", "detail": "Seeking hands-on experience in applied machine learning" },
+    { "title": "ML Project Work", "detail": "Working on real-world predictive modeling challenges" },
+    { "title": "Data Analysis Projects", "detail": "Providing insights through statistical analysis" }
+  ],
+  "languages": [
+    { "language": "Arabic", "fluency": "Native proficiency" },
+    { "language": "English", "fluency": "B2 - Upper-Intermediate (Professional & Technical Communication)" }
+  ],
+  "currentFocus": [
+    { "title": "Skill Development", "detail": "Deepening expertise in time series forecasting and deep learning" },
+    { "title": "Open Source", "detail": "Contributing to open-source data science projects" },
+    { "title": "Portfolio Growth", "detail": "Building projects with measurable real-world impact" }
+  ],
+  "meta": { "cvUrl": "assets/docs/Omniah_Arafah_Resume.pdf" },
+  "certifications": [
+    {
+      "name": "Data Analysis for Freelancing Fellowship",
+      "issuer": "National Telecommunication Institute (NTI)",
+      "summary": "An intensive bootcamp mastering advanced workflows in Python, Excel, and Power BI to build client-ready analytical applications."
+    }
+  ]
+}
