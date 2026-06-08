@@ -508,5 +508,6 @@
 
   // Expose renderProjects globally so loader.js can call it on language switch
   window.renderProjects = renderProjects;
+  window.buildFilters = buildFilters;
 
 })();
