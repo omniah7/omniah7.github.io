@@ -16,69 +16,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # ============================================================
-      # DEBUG: Show current placeholder values before replacement
-      # ============================================================
-      - name: Debug - Show Before
-        run: |
-          echo "=== BEFORE REPLACEMENT ==="
-          grep -n "TEMPORARY_PUBLIC_KEY\|TEMPORARY_SERVICE_ID\|TEMPORARY_TEMPLATE_ID" assets/js/contact.js || echo "No placeholders found"
-
-      # ============================================================
-      # Inject EmailJS keys using Python (more reliable than sed)
-      # ============================================================
       - name: Inject EmailJS Keys
-        env:
-          EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
-          EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
-          EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
         run: |
-          python3 -c "
-          import os
-          
-          # Read the file
-          with open('assets/js/contact.js', 'r') as f:
-              content = f.read()
-          
-          # Get secrets from environment
-          pub_key = os.environ['EMAILJS_PUBLIC_KEY']
-          svc_id = os.environ['EMAILJS_SERVICE_ID']
-          tmp_id = os.environ['EMAILJS_TEMPLATE_ID']
-          
-          print(f'Public Key length: {len(pub_key)}')
-          print(f'Service ID length: {len(svc_id)}')
-          print(f'Template ID length: {len(tmp_id)}')
-          
-          # Replace placeholders
-          content = content.replace('TEMPORARY_PUBLIC_KEY', pub_key)
-          content = content.replace('TEMPORARY_SERVICE_ID', svc_id)
-          content = content.replace('TEMPORARY_TEMPLATE_ID', tmp_id)
-          
-          # Write back
-          with open('assets/js/contact.js', 'w') as f:
-              f.write(content)
-          
-          print('✅ Keys injected successfully')
-          "
-
-      # ============================================================
-      # DEBUG: Verify replacement worked
-      # ============================================================
-      - name: Debug - Show After
-        run: |
-          echo "=== AFTER REPLACEMENT ==="
-          echo "--- emailjs.init line ---"
-          grep "emailjs.init" assets/js/contact.js
-          echo "--- emailjs.sendForm line ---"
-          grep "sendForm" assets/js/contact.js
-          echo "--- Checking for remaining TEMPORARY ---"
-          if grep -q "TEMPORARY_PUBLIC_KEY\|TEMPORARY_SERVICE_ID\|TEMPORARY_TEMPLATE_ID" assets/js/contact.js; then
-            echo "❌ FAILED: Placeholders still exist!"
-            grep -n "TEMPORARY" assets/js/contact.js
-            exit 1
-          else
-            echo "✅ All placeholders replaced!"
-          fi
+          sed -i 's/TEMPORARY_PUBLIC_KEY/${{ secrets.EMAILJS_PUBLIC_KEY }}/g' assets/js/contact.js
+          sed -i 's/TEMPORARY_SERVICE_ID/${{ secrets.EMAILJS_SERVICE_ID }}/g' assets/js/contact.js
+          sed -i 's/TEMPORARY_TEMPLATE_ID/${{ secrets.EMAILJS_TEMPLATE_ID }}/g' assets/js/contact.js
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
@@ -86,4 +28,3 @@ jobs:
           folder: .
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
-          clean: true
