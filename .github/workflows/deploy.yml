@@ -3,7 +3,14 @@ name: Deploy Portfolio
 on:
   push:
     branches:
-      - main # Or whichever branch you push to
+      - main  # Deploy when pushing to main branch
+  workflow_dispatch:  # Allow manual triggering
+
+# ============================================================
+# PERMISSIONS — Required for pushing to gh-pages branch
+# ============================================================
+permissions:
+  contents: write  # Allows pushing to gh-pages branch
 
 jobs:
   deploy:
@@ -12,14 +19,24 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      # ============================================================
+      # SECURITY: Inject real EmailJS keys from GitHub Secrets
+      # These replace the placeholder values in contact.js
+      # ============================================================
       - name: Inject EmailJS Keys
         run: |
           sed -i "s/TEMPORARY_PUBLIC_KEY/${{ secrets.EMAILJS_PUBLIC_KEY }}/g" assets/js/contact.js
           sed -i "s/TEMPORARY_SERVICE_ID/${{ secrets.EMAILJS_SERVICE_ID }}/g" assets/js/contact.js
           sed -i "s/TEMPORARY_TEMPLATE_ID/${{ secrets.EMAILJS_TEMPLATE_ID }}/g" assets/js/contact.js
+          echo "✅ EmailJS keys injected successfully"
 
+      # ============================================================
+      # Deploy to gh-pages branch (production)
+      # ============================================================
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: . # Deploys your root folder files
-          branch: gh-pages # Deploys to a clean, production-only branch
+          folder: .           # Deploy root folder
+          branch: gh-pages    # Production branch
+          token: ${{ secrets.GITHUB_TOKEN }}  # Use built-in token
+          clean: true         # Remove old files before deploying
