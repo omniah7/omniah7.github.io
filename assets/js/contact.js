@@ -103,7 +103,7 @@ function renderContact() {
   /**
    * Initialize EmailJS with your Public Key.
    * 
-   * IMPORTANT: Replace "c8rsIlN5a8BFogmBw" with your actual key from:
+   * IMPORTANT: Replace "TEMPORARY_PUBLIC_KEY" with your actual key from:
    * EmailJS Dashboard → Account → API Keys → Public Key
    * 
    * The public key is safe to expose in client-side code.
@@ -151,8 +151,8 @@ function renderContact() {
      * Send form data using EmailJS.
      * 
      * IMPORTANT: Replace these values with your actual credentials:
-     * - service_8ix9txc: From EmailJS Dashboard → Email Services
-     * - template_jtlfoym: From EmailJS Dashboard → Email Templates
+     * - TEMPORARY_SERVICE_ID: From EmailJS Dashboard → Email Services
+     * - TEMPORARY_TEMPLATE_ID: From EmailJS Dashboard → Email Templates
      * 
      * The 'this' keyword refers to the form element itself,
      * which EmailJS uses to extract all form field values automatically.
