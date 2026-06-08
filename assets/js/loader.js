@@ -333,6 +333,7 @@
     // Re-render page-specific content (each page has its own render function)
     if (typeof window.renderHome === 'function') window.renderHome();
     if (typeof window.renderAbout === 'function') window.renderAbout();
+    if (typeof window.buildFilters === 'function') window.buildFilters();
     if (typeof window.renderProjects === 'function') window.renderProjects();
     if (typeof window.renderContact === 'function') window.renderContact();
 

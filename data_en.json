@@ -171,7 +171,7 @@
       "name": "COVID-19 Global Healthcare Insights Dashboard","category": "Data Visualization","featured": false,
       "achievement": "Visualized 200+ countries | Automated trend reporting",
       "description": "Developed an interactive Power BI dashboard to visualize COVID-19 progression globally. Integrated multi-source data to track cases, mortality rates, and recovery trends with geographical mapping.",
-      "keywords": ["Power BI","DAX","Data Modeling","Public Health Analytics","Time-Series"],
+      "keywords": ["Power BI","DAX","Data Modeling","Public Health Analytics","Time Series"],
       "image": [
         "assets/images/projects/covid19/covid19_proj_1.png"
       ]
